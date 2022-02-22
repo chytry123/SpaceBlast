@@ -41,7 +41,6 @@ public class PowerUpBarrier : MonoBehaviour
         {
             player_barrier.SetActive(false);
             collected = false;
-            Debug.Log("Barrier gone");
         }
 
         // Destroy powerup object if not collected
