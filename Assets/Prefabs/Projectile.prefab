@@ -259,6 +259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 100000
+  destroy_dist: 200
   explosion: {fileID: 8033635468588716503}
   vfx: {fileID: 6378634117782903188}
 --- !u!82 &9166042582253275211

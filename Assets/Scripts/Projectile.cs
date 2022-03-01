@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public float speed = 10000;
+    public float speed = 10000, destroy_dist;
     public GameObject explosion, vfx;
     float t;
 
@@ -14,7 +14,10 @@ public class Projectile : MonoBehaviour
     {
         GetComponent<Rigidbody>().AddForce(0, 0, speed * Time.deltaTime);
 
-        if (transform.position.z > 200f) GetComponent<Collider>().enabled = false;
+        if (transform.position.z > destroy_dist)
+        {
+            GetComponent<Collider>().enabled = false;
+        }
         if (Time.time - t > 5f) Destroy(gameObject);    // Destroy after 5s to avoid interrupting explosion sound
     }
 
