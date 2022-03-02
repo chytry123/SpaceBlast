@@ -34,9 +34,9 @@ public class AlienMovement : MonoBehaviour
         //    //random_position = new Vector3(Random.Range(-moving_radius, moving_radius), Random.Range(-moving_radius, moving_radius), transform.position.z);
         //    random_position = new Vector3(xy.x, xy.y, transform.position.z);
         //}
-        if (transform.position.x >= 10  |
+        if (transform.position.x >= 10 |
             transform.position.x <= -10 |
-            transform.position.y >= 5   |
+            transform.position.y >= 5 |
             transform.position.y <= -5)
         {
             x = Random.Range(0f, max_side_velocity);

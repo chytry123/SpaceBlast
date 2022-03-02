@@ -79,7 +79,7 @@ public class Spawner : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(Time.time - t > 1f)
+        if (Time.time - t > 1f)
         {
             wave_count += 1;
 
