@@ -19,7 +19,7 @@ public class ObstacleMovement : MonoBehaviour
         if (transform.position.z < 10)
         {
             transform.Find("mesh_transparent").gameObject.SetActive(true);
-            transform.GetChild(0).GetComponent<MeshRenderer>().enabled = false;
+            transform.Find("mesh").gameObject.SetActive(false);
         }
 
         if (transform.position.z < -30) Destroy(gameObject);

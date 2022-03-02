@@ -5,7 +5,7 @@ using SaveSystem;
 
 public class GameManager : MonoBehaviour
 {
-    public GameObject GameOverUI, PauseUI, LoadingPanel, score;
+    public GameObject GameOverUI, PauseUI, LoadingPanel, score, spawner;
     public Text finalScore;
     bool gameHasEnded = false;
     string score_value;
@@ -17,6 +17,7 @@ public class GameManager : MonoBehaviour
         {
             gameHasEnded = true;
             score.SetActive(false);
+            spawner.SetActive(false);
             score_value = score.GetComponent<Text>().text;
             EasySave.Save("score9", int.Parse(score_value));
             finalScore.text = score_value;
