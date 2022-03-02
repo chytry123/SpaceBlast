@@ -15,7 +15,13 @@ public class ObstacleMovement : MonoBehaviour
     {
         rb.AddForce(0, 0, (-speed - Time.timeSinceLevelLoad * 30) * Time.deltaTime);
 
-        if (transform.position.z < -0.1) transform.GetChild(0).GetComponent<MeshRenderer>().enabled = false;
+        // Asteroid becomes transparent when it's close to camera
+        if (transform.position.z < 10)
+        {
+            transform.Find("mesh_transparent").gameObject.SetActive(true);
+            transform.GetChild(0).GetComponent<MeshRenderer>().enabled = false;
+        }
+
         if (transform.position.z < -30) Destroy(gameObject);
     }
 }

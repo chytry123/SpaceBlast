@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1232703897866089527}
   - component: {fileID: 4117398917862838929}
   - component: {fileID: 7528356087744598111}
+  - component: {fileID: 745021716256779120}
   m_Layer: 0
   m_Name: PowerUpMultishot
   m_TagString: Untagged
@@ -31,7 +32,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2603831593294299118}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.28, y: 0, z: 5.3}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.6, y: 0.8, z: 0.10000003}
   m_Children:
   - {fileID: 2603831593331621963}
@@ -457,7 +458,7 @@ MeshCollider:
   m_GameObject: {fileID: 2603831593294299118}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -588,6 +589,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!135 &745021716256779120
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2603831593294299118}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.5
+  m_Center: {x: 0.5, y: 1.0000002, z: -0.49999946}
 --- !u!1 &2603831593331621962
 GameObject:
   m_ObjectHideFlags: 0
