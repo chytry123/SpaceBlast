@@ -2778,7 +2778,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1123585563217519423, guid: 1ee2504ba7c647240b6af4f1c250a8e8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8391370387462605579, guid: 1ee2504ba7c647240b6af4f1c250a8e8, type: 3}
       propertyPath: m_IsActive
@@ -3708,7 +3708,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1797470385
 Transform:
   m_ObjectHideFlags: 0
@@ -3739,7 +3739,6 @@ MonoBehaviour:
   player: {fileID: 1994181414}
   powerup_multishot: {fileID: 2603831593294299118, guid: 6d16a2f77eaf7184b827a13dcab1cb59, type: 3}
   powerup_barrier: {fileID: 89713552580018601, guid: 344eb4ab2d90b0e4289949927feb15ce, type: 3}
-  alien: {fileID: 1123585563217519423, guid: 1ee2504ba7c647240b6af4f1c250a8e8, type: 3}
 --- !u!1 &1955175283
 GameObject:
   m_ObjectHideFlags: 0
